@@ -3,6 +3,7 @@
 
 ### 使用API
 http://zipcloud.ibsnet.co.jp/doc/api
+https://qiita.com/api/v2/items
 
 ### 参考
 
