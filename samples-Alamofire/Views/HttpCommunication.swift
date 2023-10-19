@@ -8,7 +8,7 @@
 import SwiftUI
 import Alamofire
 
-/// Alamofireを用いたHTTP通信のサンプル1
+/// Alamofireを用いたHTTP通信でのデータ取得サンプル
 struct HttpCommunication: View {
     var body: some View {
         Button {
@@ -22,7 +22,8 @@ struct HttpCommunication: View {
         /// AF.request() -> Alamofireによるリクエストの送信
         /// .request -> 引数にURLやHTTPメソッド、パラメータを渡すことで任意のリクエストを送信
         /// .response -> レスポンスを参照
-        AF.request("https://tech.amefure.com/api/article").response { response in
+        AF.request("https://tech.amefure.com/api/article")
+            .response { response in
             do {
                 // JSONオブジェクトからデータ型のインスタンスをデコードするオブジェクト
                 let decoder = JSONDecoder()
@@ -32,7 +33,6 @@ struct HttpCommunication: View {
             } catch {
                 print(error.localizedDescription)
             }
-
         }
     }
 }
