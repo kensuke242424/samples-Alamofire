@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct samples_AlamofireApp: App {
+struct SamplesAlamofireApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
