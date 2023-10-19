@@ -16,6 +16,8 @@
 		BE1DC38E2AE0C99D002971AE /* HttpCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DC38D2AE0C99D002971AE /* HttpCommunication.swift */; };
 		BE1DC3912AE0CCA3002971AE /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DC3902AE0CCA3002971AE /* Article.swift */; };
 		BE1DC3952AE0DB4C002971AE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DC3942AE0DB4C002971AE /* APIManager.swift */; };
+		BE1DC3972AE0EE8F002971AE /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DC3962AE0EE8F002971AE /* Address.swift */; };
+		BE1DC3992AE0FBE9002971AE /* SearchAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DC3982AE0FBE9002971AE /* SearchAddressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,9 @@
 		BE1DC38D2AE0C99D002971AE /* HttpCommunication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpCommunication.swift; sourceTree = "<group>"; };
 		BE1DC3902AE0CCA3002971AE /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		BE1DC3942AE0DB4C002971AE /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		BE1DC3962AE0EE8F002971AE /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		BE1DC3982AE0FBE9002971AE /* SearchAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAddressView.swift; sourceTree = "<group>"; };
+		BE1DC39A2AE0FE26002971AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +66,11 @@
 		BE1DC3772AE0BFB0002971AE /* samples-Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				BE1DC3932AE0DAD6002971AE /* Helpers */,
+				BE1DC39A2AE0FE26002971AE /* Info.plist */,
 				BE1DC3782AE0BFB0002971AE /* samples_AlamofireApp.swift */,
 				BE1DC37A2AE0BFB0002971AE /* ContentView.swift */,
 				BE1DC38A2AE0C92C002971AE /* Views */,
+				BE1DC3932AE0DAD6002971AE /* Helpers */,
 				BE1DC3922AE0D780002971AE /* ViewModels */,
 				BE1DC38F2AE0CC95002971AE /* Models */,
 				BE1DC37C2AE0BFB2002971AE /* Assets.xcassets */,
@@ -86,6 +92,7 @@
 			children = (
 				BE1DC38B2AE0C936002971AE /* Home.swift */,
 				BE1DC38D2AE0C99D002971AE /* HttpCommunication.swift */,
+				BE1DC3982AE0FBE9002971AE /* SearchAddressView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -94,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				BE1DC3902AE0CCA3002971AE /* Article.swift */,
+				BE1DC3962AE0EE8F002971AE /* Address.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,11 +219,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE1DC3952AE0DB4C002971AE /* APIManager.swift in Sources */,
+				BE1DC3992AE0FBE9002971AE /* SearchAddressView.swift in Sources */,
 				BE1DC37B2AE0BFB0002971AE /* ContentView.swift in Sources */,
 				BE1DC38E2AE0C99D002971AE /* HttpCommunication.swift in Sources */,
 				BE1DC38C2AE0C936002971AE /* Home.swift in Sources */,
 				BE1DC3792AE0BFB0002971AE /* samples_AlamofireApp.swift in Sources */,
 				BE1DC3912AE0CCA3002971AE /* Article.swift in Sources */,
+				BE1DC3972AE0EE8F002971AE /* Address.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +363,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "samples-Alamofire/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -383,6 +394,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "samples-Alamofire/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
