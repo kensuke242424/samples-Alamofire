@@ -9,11 +9,11 @@ import SwiftUI
 
 struct SearchAddressView: View {
 
-    @StateObject var manager = GetAddressManager()
+    @StateObject var addressVM = AddressViewModel()
 
     var body: some View {
         Button {
-            manager.getAddress(zipCode: "5940013")
+            addressVM.getAddress(zipCode: "5940013")
         } label: {
             Text( "Get address.")
         }
