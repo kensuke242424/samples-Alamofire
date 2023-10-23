@@ -13,7 +13,7 @@
 		BE1DC3802AE0BFB2002971AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE1DC37F2AE0BFB2002971AE /* Preview Assets.xcassets */; };
 		BE1DC3892AE0C917002971AE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BE1DC3882AE0C917002971AE /* Alamofire */; };
 		BE1DC38C2AE0C936002971AE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DC38B2AE0C936002971AE /* Home.swift */; };
-		BE1DC3952AE0DB4C002971AE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DC3942AE0DB4C002971AE /* APIManager.swift */; };
+		BE1DC3952AE0DB4C002971AE /* JSONPlaceHolderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DC3942AE0DB4C002971AE /* JSONPlaceHolderAPI.swift */; };
 		BE1DC3972AE0EE8F002971AE /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DC3962AE0EE8F002971AE /* Address.swift */; };
 		BE1DC3992AE0FBE9002971AE /* SearchAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DC3982AE0FBE9002971AE /* SearchAddressView.swift */; };
 		BE1DC3A02AE26D11002971AE /* AddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DC39F2AE26D11002971AE /* AddressViewModel.swift */; };
@@ -23,6 +23,7 @@
 		BE1DC3A82AE28B8B002971AE /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DC3A72AE28B8B002971AE /* Article.swift */; };
 		BE1DC3AA2AE28C51002971AE /* QiitaVeiwModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DC3A92AE28C51002971AE /* QiitaVeiwModel.swift */; };
 		BE1DC3AC2AE28DA0002971AE /* SearchQiitaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DC3AB2AE28DA0002971AE /* SearchQiitaView.swift */; };
+		BE1ECFE52AE672A600590A9F /* JSONPlaceholderAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1ECFE42AE672A600590A9F /* JSONPlaceholderAPIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +33,7 @@
 		BE1DC37C2AE0BFB2002971AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE1DC37F2AE0BFB2002971AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE1DC38B2AE0C936002971AE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		BE1DC3942AE0DB4C002971AE /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		BE1DC3942AE0DB4C002971AE /* JSONPlaceHolderAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceHolderAPI.swift; sourceTree = "<group>"; };
 		BE1DC3962AE0EE8F002971AE /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		BE1DC3982AE0FBE9002971AE /* SearchAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAddressView.swift; sourceTree = "<group>"; };
 		BE1DC39A2AE0FE26002971AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +44,7 @@
 		BE1DC3A72AE28B8B002971AE /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		BE1DC3A92AE28C51002971AE /* QiitaVeiwModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaVeiwModel.swift; sourceTree = "<group>"; };
 		BE1DC3AB2AE28DA0002971AE /* SearchQiitaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQiitaView.swift; sourceTree = "<group>"; };
+		BE1ECFE42AE672A600590A9F /* JSONPlaceholderAPIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderAPIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				BE1DC38B2AE0C936002971AE /* Home.swift */,
+				BE1ECFE42AE672A600590A9F /* JSONPlaceholderAPIView.swift */,
 				BE1DC3982AE0FBE9002971AE /* SearchAddressView.swift */,
 				BE1DC3AB2AE28DA0002971AE /* SearchQiitaView.swift */,
 				BE1DC3A52AE27FBE002971AE /* SearchMusicView.swift */,
@@ -132,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				BE1DC39E2AE26B1C002971AE /* APIManagers */,
-				BE1DC3942AE0DB4C002971AE /* APIManager.swift */,
+				BE1DC3942AE0DB4C002971AE /* JSONPlaceHolderAPI.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -242,7 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE1DC3A22AE26D76002971AE /* MusicViewModel.swift in Sources */,
-				BE1DC3952AE0DB4C002971AE /* APIManager.swift in Sources */,
+				BE1DC3952AE0DB4C002971AE /* JSONPlaceHolderAPI.swift in Sources */,
 				BE1DC3992AE0FBE9002971AE /* SearchAddressView.swift in Sources */,
 				BE1DC3AC2AE28DA0002971AE /* SearchQiitaView.swift in Sources */,
 				BE1DC3A42AE26DF5002971AE /* MusicModel.swift in Sources */,
@@ -252,6 +255,7 @@
 				BE1DC38C2AE0C936002971AE /* Home.swift in Sources */,
 				BE1DC3792AE0BFB0002971AE /* samples_AlamofireApp.swift in Sources */,
 				BE1DC3AA2AE28C51002971AE /* QiitaVeiwModel.swift in Sources */,
+				BE1ECFE52AE672A600590A9F /* JSONPlaceholderAPIView.swift in Sources */,
 				BE1DC3A62AE27FBE002971AE /* SearchMusicView.swift in Sources */,
 				BE1DC3972AE0EE8F002971AE /* Address.swift in Sources */,
 			);

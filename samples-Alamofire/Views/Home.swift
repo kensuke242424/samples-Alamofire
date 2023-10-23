@@ -10,7 +10,7 @@ import Alamofire
 
 struct Home: View {
     var body: some View {
-        SearchMusicView()
+        JSONPlaceholderAPIView()
     }
 }
 

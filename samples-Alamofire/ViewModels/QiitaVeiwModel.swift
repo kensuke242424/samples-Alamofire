@@ -55,12 +55,8 @@ class ArticleViewModel: ObservableObject {
         switch response.result {
         case .success:
             print(response.value)
-//            for music in musics {
-//                self.musics.append(music)
-//                print(music.trackName ?? "???")
-//            }
         case .failure(let error):
-            print("ERROR: \(error)")
+            print("ERROR: \(error.localizedDescription)")
             break
         }
     }
