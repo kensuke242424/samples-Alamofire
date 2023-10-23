@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 
+/// JSONPlaceHolderAPIとの通信を管理するクラス。
 class JSONPlaceHolderAPI {
     // 自身のインスタンスを静的データとして生成している
     // 呼び出す時は、JSONPlaceHolderAPI.shared...と書く
@@ -17,7 +18,7 @@ class JSONPlaceHolderAPI {
     private let baseURL = "https://jsonplaceholder.typicode.com"
 
     /// APIの「/posts」エンドポイントからデータをGETするメソッド。（async/await）
-    func fetchPosts() async throws -> [Post]? {
+    func fetchPostsAsync() async throws -> [Post]? {
         let postsURL = "\(baseURL)/posts"
 
         do {

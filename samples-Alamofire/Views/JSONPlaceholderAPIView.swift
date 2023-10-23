@@ -11,7 +11,7 @@ struct JSONPlaceholderAPIView: View {
     var body: some View {
         Button("データ取得"){
             Task {
-                try await JSONPlaceHolderAPI.shared.fetchPosts()
+                try await JSONPlaceHolderAPI.shared.fetchPostsAsync()
             }
         }
     }
