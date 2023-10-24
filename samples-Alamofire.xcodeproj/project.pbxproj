@@ -24,6 +24,8 @@
 		BE1DC3AA2AE28C51002971AE /* QiitaVeiwModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DC3A92AE28C51002971AE /* QiitaVeiwModel.swift */; };
 		BE1DC3AC2AE28DA0002971AE /* SearchQiitaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DC3AB2AE28DA0002971AE /* SearchQiitaView.swift */; };
 		BE1ECFE52AE672A600590A9F /* JSONPlaceholderAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1ECFE42AE672A600590A9F /* JSONPlaceholderAPIView.swift */; };
+		BE1ECFE72AE7D03300590A9F /* GitHubRESTAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1ECFE62AE7D03300590A9F /* GitHubRESTAPIManager.swift */; };
+		BE1ECFE92AE7D74400590A9F /* GithubRestAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1ECFE82AE7D74400590A9F /* GithubRestAPIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		BE1DC3A92AE28C51002971AE /* QiitaVeiwModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaVeiwModel.swift; sourceTree = "<group>"; };
 		BE1DC3AB2AE28DA0002971AE /* SearchQiitaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQiitaView.swift; sourceTree = "<group>"; };
 		BE1ECFE42AE672A600590A9F /* JSONPlaceholderAPIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderAPIView.swift; sourceTree = "<group>"; };
+		BE1ECFE62AE7D03300590A9F /* GitHubRESTAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRESTAPIManager.swift; sourceTree = "<group>"; };
+		BE1ECFE82AE7D74400590A9F /* GithubRestAPIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRestAPIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 				BE1DC3982AE0FBE9002971AE /* SearchAddressView.swift */,
 				BE1DC3AB2AE28DA0002971AE /* SearchQiitaView.swift */,
 				BE1DC3A52AE27FBE002971AE /* SearchMusicView.swift */,
+				BE1ECFE82AE7D74400590A9F /* GithubRestAPIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 		BE1DC39E2AE26B1C002971AE /* APIManagers */ = {
 			isa = PBXGroup;
 			children = (
+				BE1ECFE62AE7D03300590A9F /* GitHubRESTAPIManager.swift */,
 			);
 			path = APIManagers;
 			sourceTree = "<group>";
@@ -252,11 +258,13 @@
 				BE1DC3A02AE26D11002971AE /* AddressViewModel.swift in Sources */,
 				BE1DC37B2AE0BFB0002971AE /* ContentView.swift in Sources */,
 				BE1DC3A82AE28B8B002971AE /* Article.swift in Sources */,
+				BE1ECFE92AE7D74400590A9F /* GithubRestAPIView.swift in Sources */,
 				BE1DC38C2AE0C936002971AE /* Home.swift in Sources */,
 				BE1DC3792AE0BFB0002971AE /* samples_AlamofireApp.swift in Sources */,
 				BE1DC3AA2AE28C51002971AE /* QiitaVeiwModel.swift in Sources */,
 				BE1ECFE52AE672A600590A9F /* JSONPlaceholderAPIView.swift in Sources */,
 				BE1DC3A62AE27FBE002971AE /* SearchMusicView.swift in Sources */,
+				BE1ECFE72AE7D03300590A9F /* GitHubRESTAPIManager.swift in Sources */,
 				BE1DC3972AE0EE8F002971AE /* Address.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
