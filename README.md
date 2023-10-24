@@ -1,9 +1,12 @@
 # samples-Alamofire
-「Alamofire」APIを試してみるリポジトリ。
+Alamofire APIを色々試してみるリポジトリ。
 
 ### 使用API
-http://zipcloud.ibsnet.co.jp/doc/api
-https://qiita.com/api/v2/items
+- http://zipcloud.ibsnet.co.jp  
+- https://jsonplaceholder.typicode.com  
+- https://qiita.com
+- https://api.github.com
+
 
 ### 参考
 
