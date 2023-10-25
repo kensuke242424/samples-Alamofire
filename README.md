@@ -6,6 +6,7 @@ Alamofire APIを色々試してみるリポジトリ。
 - https://jsonplaceholder.typicode.com  
 - https://qiita.com
 - https://api.github.com
+- https://restcountries.com/
 
 
 ### 参考
