@@ -26,6 +26,9 @@
 		BE1ECFE52AE672A600590A9F /* JSONPlaceholderAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1ECFE42AE672A600590A9F /* JSONPlaceholderAPIView.swift */; };
 		BE1ECFE72AE7D03300590A9F /* GitHubRESTAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1ECFE62AE7D03300590A9F /* GitHubRESTAPIManager.swift */; };
 		BE1ECFE92AE7D74400590A9F /* GithubRestAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1ECFE82AE7D74400590A9F /* GithubRestAPIView.swift */; };
+		BE1ECFF12AE916A500590A9F /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1ECFF02AE916A500590A9F /* CountryModel.swift */; };
+		BE1ECFF32AE9170600590A9F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1ECFF22AE9170600590A9F /* APIManager.swift */; };
+		BE1ECFF52AE918F100590A9F /* RestCountriesApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1ECFF42AE918F100590A9F /* RestCountriesApiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		BE1ECFE42AE672A600590A9F /* JSONPlaceholderAPIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderAPIView.swift; sourceTree = "<group>"; };
 		BE1ECFE62AE7D03300590A9F /* GitHubRESTAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRESTAPIManager.swift; sourceTree = "<group>"; };
 		BE1ECFE82AE7D74400590A9F /* GithubRestAPIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRestAPIView.swift; sourceTree = "<group>"; };
+		BE1ECFF02AE916A500590A9F /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		BE1ECFF22AE9170600590A9F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		BE1ECFF42AE918F100590A9F /* RestCountriesApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestCountriesApiView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,13 +88,16 @@
 		BE1DC3772AE0BFB0002971AE /* samples-Alamofire */ = {
 			isa = PBXGroup;
 			children = (
+				BE1ECFEF2AE9167E00590A9F /* REST Countries API */,
+				BE1ECFEE2AE9144300590A9F /* ZipcloudAPI */,
+				BE1ECFED2AE913DF00590A9F /* iTunesAPI */,
+				BE1ECFEC2AE913B100590A9F /* QiitaAPI */,
+				BE1ECFEB2AE9139300590A9F /* JSONPlaseHolderAPI */,
+				BE1ECFEA2AE9136700590A9F /* GithubRESTAPI */,
 				BE1DC39A2AE0FE26002971AE /* Info.plist */,
 				BE1DC3782AE0BFB0002971AE /* samples_AlamofireApp.swift */,
 				BE1DC37A2AE0BFB0002971AE /* ContentView.swift */,
-				BE1DC3932AE0DAD6002971AE /* Helpers */,
-				BE1DC38A2AE0C92C002971AE /* Views */,
-				BE1DC3922AE0D780002971AE /* ViewModels */,
-				BE1DC38F2AE0CC95002971AE /* Models */,
+				BE1DC38B2AE0C936002971AE /* Home.swift */,
 				BE1DC37C2AE0BFB2002971AE /* Assets.xcassets */,
 				BE1DC37E2AE0BFB2002971AE /* Preview Content */,
 			);
@@ -103,54 +112,62 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		BE1DC38A2AE0C92C002971AE /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				BE1DC38B2AE0C936002971AE /* Home.swift */,
-				BE1ECFE42AE672A600590A9F /* JSONPlaceholderAPIView.swift */,
-				BE1DC3982AE0FBE9002971AE /* SearchAddressView.swift */,
-				BE1DC3AB2AE28DA0002971AE /* SearchQiitaView.swift */,
-				BE1DC3A52AE27FBE002971AE /* SearchMusicView.swift */,
-				BE1ECFE82AE7D74400590A9F /* GithubRestAPIView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		BE1DC38F2AE0CC95002971AE /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				BE1DC3962AE0EE8F002971AE /* Address.swift */,
-				BE1DC3A32AE26DF5002971AE /* MusicModel.swift */,
-				BE1DC3A72AE28B8B002971AE /* Article.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		BE1DC3922AE0D780002971AE /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				BE1DC39F2AE26D11002971AE /* AddressViewModel.swift */,
-				BE1DC3A12AE26D76002971AE /* MusicViewModel.swift */,
-				BE1DC3A92AE28C51002971AE /* QiitaVeiwModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		BE1DC3932AE0DAD6002971AE /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				BE1DC39E2AE26B1C002971AE /* APIManagers */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		BE1DC39E2AE26B1C002971AE /* APIManagers */ = {
+		BE1ECFEA2AE9136700590A9F /* GithubRESTAPI */ = {
 			isa = PBXGroup;
 			children = (
 				BE1ECFE62AE7D03300590A9F /* GitHubRESTAPIManager.swift */,
+				BE1ECFE82AE7D74400590A9F /* GithubRestAPIView.swift */,
+			);
+			path = GithubRESTAPI;
+			sourceTree = "<group>";
+		};
+		BE1ECFEB2AE9139300590A9F /* JSONPlaseHolderAPI */ = {
+			isa = PBXGroup;
+			children = (
+				BE1ECFE42AE672A600590A9F /* JSONPlaceholderAPIView.swift */,
 				BE1DC3942AE0DB4C002971AE /* JSONPlaceHolderAPI.swift */,
 			);
-			path = APIManagers;
+			path = JSONPlaseHolderAPI;
+			sourceTree = "<group>";
+		};
+		BE1ECFEC2AE913B100590A9F /* QiitaAPI */ = {
+			isa = PBXGroup;
+			children = (
+				BE1DC3AB2AE28DA0002971AE /* SearchQiitaView.swift */,
+				BE1DC3A92AE28C51002971AE /* QiitaVeiwModel.swift */,
+				BE1DC3A72AE28B8B002971AE /* Article.swift */,
+			);
+			path = QiitaAPI;
+			sourceTree = "<group>";
+		};
+		BE1ECFED2AE913DF00590A9F /* iTunesAPI */ = {
+			isa = PBXGroup;
+			children = (
+				BE1DC3A52AE27FBE002971AE /* SearchMusicView.swift */,
+				BE1DC3A32AE26DF5002971AE /* MusicModel.swift */,
+				BE1DC3A12AE26D76002971AE /* MusicViewModel.swift */,
+			);
+			path = iTunesAPI;
+			sourceTree = "<group>";
+		};
+		BE1ECFEE2AE9144300590A9F /* ZipcloudAPI */ = {
+			isa = PBXGroup;
+			children = (
+				BE1DC3982AE0FBE9002971AE /* SearchAddressView.swift */,
+				BE1DC39F2AE26D11002971AE /* AddressViewModel.swift */,
+				BE1DC3962AE0EE8F002971AE /* Address.swift */,
+			);
+			path = ZipcloudAPI;
+			sourceTree = "<group>";
+		};
+		BE1ECFEF2AE9167E00590A9F /* REST Countries API */ = {
+			isa = PBXGroup;
+			children = (
+				BE1ECFF02AE916A500590A9F /* CountryModel.swift */,
+				BE1ECFF22AE9170600590A9F /* APIManager.swift */,
+				BE1ECFF42AE918F100590A9F /* RestCountriesApiView.swift */,
+			);
+			path = "REST Countries API";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,11 +273,14 @@
 				BE1DC3AC2AE28DA0002971AE /* SearchQiitaView.swift in Sources */,
 				BE1DC3A42AE26DF5002971AE /* MusicModel.swift in Sources */,
 				BE1DC3A02AE26D11002971AE /* AddressViewModel.swift in Sources */,
+				BE1ECFF12AE916A500590A9F /* CountryModel.swift in Sources */,
 				BE1DC37B2AE0BFB0002971AE /* ContentView.swift in Sources */,
 				BE1DC3A82AE28B8B002971AE /* Article.swift in Sources */,
 				BE1ECFE92AE7D74400590A9F /* GithubRestAPIView.swift in Sources */,
 				BE1DC38C2AE0C936002971AE /* Home.swift in Sources */,
+				BE1ECFF52AE918F100590A9F /* RestCountriesApiView.swift in Sources */,
 				BE1DC3792AE0BFB0002971AE /* samples_AlamofireApp.swift in Sources */,
+				BE1ECFF32AE9170600590A9F /* APIManager.swift in Sources */,
 				BE1DC3AA2AE28C51002971AE /* QiitaVeiwModel.swift in Sources */,
 				BE1ECFE52AE672A600590A9F /* JSONPlaceholderAPIView.swift in Sources */,
 				BE1DC3A62AE27FBE002971AE /* SearchMusicView.swift in Sources */,
