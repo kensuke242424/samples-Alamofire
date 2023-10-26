@@ -28,12 +28,13 @@ class RestCountriesAPI {
 
         case .failure(let afError):
             print(String(describing: afError))
-//            print("ERROR: \(afError.localizedDescription)")
+            // localizedDescriptionにはコンテキストがないため、おすすめしない
+            // print("ERROR: \(afError.localizedDescription)")
             throw afError
         }
     }
 
-    func handleRequest(completion: @escaping (Result<[CountryAPI], Error>) -> Void) {
+    func handleRequest(completion: @escaping (Result<[Country], Error>) -> Void) {
 
             let urlString = "https://restcountries.com/v3.1/all"
 
@@ -44,9 +45,9 @@ class RestCountriesAPI {
             let task = URLSession.shared.dataTask(with: request) { data, response, error in
                 if let data = data {
                     let decoder = JSONDecoder()
-                    
+
                     do {
-                        let articles = try decoder.decode([CountryAPI].self, from: data)
+                        let articles = try decoder.decode([Country].self, from: data)
                         completion(.success(articles))
 
                     } catch let error {
